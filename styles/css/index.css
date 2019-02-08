@@ -632,7 +632,7 @@ h5{
 }
 
 #watch-side{
-    min-width: 670px;
+    width: 670px;
     background: url(../img/watch.jpg) no-repeat;
     background-size: cover;
 }
