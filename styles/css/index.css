@@ -42,6 +42,9 @@ span{
     font-family: "Open Sans", sans-serif;
 }
 
+button:focus {outline:0;}
+
+
 #mountain{
     background: url(../img/background-mountain.png) no-repeat;
     background-size: 126%;
@@ -120,6 +123,21 @@ span{
     margin-left: 2%;
 }
 
+#search-website{
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    height: 43px;
+    width: 163px;
+    padding: 0px 30px 0px 26px;
+    margin: 4px 3px 4px 22px;
+    background: #ffffff url(../img/search.png) no-repeat;
+    background-size: 13px;
+    background-position: 192px 14px;
+    font-size: 12px;
+}
+
+
 @media (min-width: 1900px){
     #mountain{
         background-size: cover;
@@ -161,16 +179,21 @@ span{
     }
 
     #navigation-bar a:hover{
-        padding-bottom: 25%;
-        padding-top: 7%;
+        padding-bottom: 16%;
+        padding-top: 16%;
         border-bottom: 3px solid #ffffff;
+    }
+
+    #navigation-bar{
+        min-height: 70px;
     }
 }
 
 @media (max-width: 1000px) {
     #navigation-bar{
         width: 90%;
-        overflow: scroll;
+        overflow-x: scroll;
+        overflow-y: hidden;
         justify-content: flex-start;
     }
     .menu-item {
@@ -180,19 +203,6 @@ span{
     }
 }
 
-#search-website{
-    border-radius: 25px;
-    outline: none;
-    border: none;
-    height: 43px;
-    width: 163px;
-    padding: 0px 30px 0px 26px;
-    margin: 4px 3px 4px 22px;
-    background: #ffffff url(../img/search.png) no-repeat;
-    background-size: 13px;
-    background-position: 192px 14px;
-    font-size: 12px;
-}
 
 #mountain-body{
     display: flex;
@@ -317,7 +327,7 @@ p{
     #blue-wrapper{
         height: 80%;
         width: 80%;
-        margin: 30px 0px 0px 8%;
+        margin: 30px 0 0 8%;
 
     }
 }
@@ -327,9 +337,8 @@ p{
 }
 
 #shape-container{
-    width: 142px;
-    height: 37px;
-    padding-left: 45.7%;
+    width: 100%;
+    height: auto;
 }
 
 #blue-shape{
@@ -350,7 +359,15 @@ p{
 
 @media (max-width: 1000px) {
 #shape-container{
-    padding-left: 30%;
+    width: 100%;
+    min-height: 50px;
+    background: url(../img/shape.png) no-repeat;;
+    background-position: center;
+    background-size: cover;
+    background-position-y: -2px;
+}
+#blue-shape{
+    display: none;
 }
 }
 
@@ -615,7 +632,7 @@ h5{
 
 
 #watch-main p{
-    margin: 0px 0 0 0;
+    margin: 0 0 0 0;
     letter-spacing: 0.001px;
     line-height: 30px;
     font-weight: 400;
