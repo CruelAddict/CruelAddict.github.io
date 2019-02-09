@@ -339,6 +339,8 @@ p{
 #shape-container{
     width: 100%;
     height: auto;
+    position: absolute;
+    top: -10px;
 }
 
 #blue-shape{
@@ -354,7 +356,7 @@ p{
     background-size: 100%;
     background-position-y: -18px;
     height: 540px;
-
+    position: relative;
 }
 
 @media (max-width: 1000px) {
@@ -417,6 +419,12 @@ p{
     }
     #button-on-pink-forest{
         margin-right: 20px;
+    }
+}
+
+@media (max-width: 1300px) {
+    #pink-main h4{
+        padding-top: 114px;
     }
 }
 
