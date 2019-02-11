@@ -7,7 +7,7 @@ a{
 
 body{
     margin: 0;
-    width: 100%;
+    width: 100.1%;
     overflow-x: hidden;
 }
 
@@ -310,7 +310,7 @@ p{
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .flex-row-wrapper{
         flex-direction: column;
         height: 400px;
@@ -359,7 +359,7 @@ p{
     position: relative;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 2500px) {
 #shape-container{
     width: 100%;
     min-height: 50px;
